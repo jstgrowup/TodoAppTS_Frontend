@@ -6,17 +6,18 @@ interface TodoListItemProps {
 function TodoListItem({ todo, toggleCompleted }: TodoListItemProps) {
   return (
     <div>
-      <>
-      {
-        console.log("ewggfddsfhsvdkfh")
-        
-      }
-      </>
+     
       <ul>
+        
         <label
           htmlFor=""
           className={todo.completed ? "todo-row complete" : "todo"}
         ></label>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+
         <input type="checkbox" onChange={() => toggleCompleted(todo)} />
         <p>{todo.text}</p>
       </ul>
