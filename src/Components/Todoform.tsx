@@ -2,6 +2,12 @@ import React, { ChangeEvent, useState, FormEvent } from "react";
 interface TodoformProps {
   addTodo: AddTodo;
 }
+
+
+
+
+
+
 function Todoform({ addTodo }: TodoformProps) {
   const [newTodo, setnewTodo] = useState<string>("");
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -10,6 +16,8 @@ function Todoform({ addTodo }: TodoformProps) {
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     addTodo(newTodo);
+    console.log("hello tSx");
+    
     setnewTodo("");
   };
   return (
