@@ -4,7 +4,7 @@ import Todoform from "./Components/Todoform";
 import TodoList from "./Components/TodoList";
 
 function App() {
-  const [count, setCount] = useState(0);
+   
   const [todos, setTodos] = useState<Array<Todo>>([]);
   const addTodo: AddTodo = (newTodo) => {
     if (newTodo !== "") {
