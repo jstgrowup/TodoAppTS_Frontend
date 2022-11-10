@@ -6,6 +6,12 @@ interface TodoListItemProps {
 function TodoListItem({ todo, toggleCompleted }: TodoListItemProps) {
   return (
     <div>
+      <>
+      {
+        console.log("ewggfddsfhsvdkfh")
+        
+      }
+      </>
       <ul>
         <label
           htmlFor=""
